@@ -1,19 +1,19 @@
 //Algoritmo Realizado em C, enunciado da questao a seguir:
 
-/*Seu chefe está ao telefone, nervoso. Ele quer que você compute a soma de uma sequência de números que ele
-*vai falar para você
-*ao telefone, para saber o total das vendas em sua mais recente viagem de negócios.
-*Infelizmente, de vez em quando seu chefe fala números errados para você ao telefone.
-*Felizmente, seu chefe rapidamente percebe que falou um número errado e diz "zero", que como combinado previamente quer
-*dizer ignore o último número corrente.
+/*Seu chefe estÃ¡ ao telefone, nervoso. Ele quer que vocÃª compute a soma de uma sequÃªncia de nÃºmeros que ele
+*vai falar para vocÃª
+*ao telefone, para saber o total das vendas em sua mais recente viagem de negÃ³cios.
+*Infelizmente, de vez em quando seu chefe fala nÃºmeros errados para vocÃª ao telefone.
+*Felizmente, seu chefe rapidamente percebe que falou um nÃºmero errado e diz "zero", que como combinado previamente quer
+*dizer ignore o Ãºltimo nÃºmero corrente.
 *Infelizmente, seu chefe pode cometer erros repetidos, e diz "zero" para cada erro.
-*Por exemplo, seu chefe pode falar ao telefone "Um, três, cinco, quatro, zero, zero, sete, zero, zero, seis",
+*Por exemplo, seu chefe pode falar ao telefone "Um, trÃªs, cinco, quatro, zero, zero, sete, zero, zero, seis",
 *o que significa uma soma total igual a 7.
 *Entrada:
-*A primeira linha da entrada contém um inteiro N, a quantidade de números inteiros (incluindo os "zeros") que o
-*seu chefe falou ao telefone. Cada uma das N linhas seguintes contém um número inteiro Xi.
+*A primeira linha da entrada contÃ©m um inteiro N, a quantidade de nÃºmeros inteiros (incluindo os "zeros") que o
+*seu chefe falou ao telefone. Cada uma das N linhas seguintes contÃ©m um nÃºmero inteiro Xi.
 *Saida:
-*Seu programa deve produzir uma única linha na saída, contendo um único inteiro, a soma correta dos números,
+*Seu programa deve produzir uma Ãºnica linha na saÃ­da, contendo um Ãºnico inteiro, a soma correta dos nÃºmeros,
 *levando em conta que o valor 0 significa erro, conforme descrito.
 *
 *Link para questao e casos de teste: https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/zero/
@@ -34,8 +34,8 @@ int main(){
     scanf("%d",&v[i]);
     //Le-se o que o usuario digitou e entao guarda-se na posicao i do vetor v[quant_num].
     if(v[i]==0){
-    /*Verificamos se o numero digitado pelo usuario é 0, se for zero rodamos o vetor ao contrario procurando
-    *o primeiro numero diferente de 0 colocando o valor 0 caso haja essa situação, caso não, já haverá zeros
+    /*Verificamos se o numero digitado pelo usuario Ã© 0, se for zero rodamos o vetor ao contrario procurando
+    *o primeiro numero diferente de 0 colocando o valor 0 caso haja essa situaÃ§Ã£o, caso nÃ£o, jÃ¡ haverÃ¡ zeros
     *em todas as casas anteriores nao sendo necessario o zero.
     */
         for(j=i;j>-1;j--){
@@ -47,9 +47,9 @@ int main(){
     }
  }
  for(i=0;i<quant_num;i++){
-    /*Como o problema nos pede uma soma de todos os valores não cancelados, foi-se feito um novo laco de repeticao
+    /*Como o problema nos pede uma soma de todos os valores nÃ£o cancelados, foi-se feito um novo laco de repeticao
     *para que somasse os valores no contidos no vetor v[quant_num] apos os cancelamentos, e por isso podemos colocar
-    *zero nas posições que o chefe nos mandou cancelar, pois representa o elemento neutro da soma
+    *zero nas posiÃ§Ãµes que o chefe nos mandou cancelar, pois representa o elemento neutro da soma
     */
     soma+=v[i];
     printf("%d ",v[i]);
