@@ -1,4 +1,4 @@
-# Enunciado da Questao
+# Enunciado da Questão
 >Algoritmo Realizado em C, enunciado da questao a seguir:
 >
 >A prefeitura contratou um novo professor para ensinar as crianças do bairro a jogar tênis na quadra de tênis do parque municipal. 
@@ -20,5 +20,5 @@
 >Se o participante não for colocado em nenhum dos três grupos seu programa deve imprimir o valor -1.
 >
 >
-[Link para questao e casos de teste](https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/torneio/)
+## [Link para questao e casos de teste](https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/torneio/)
 
