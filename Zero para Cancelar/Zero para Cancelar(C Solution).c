@@ -26,13 +26,9 @@
 int main(){
  int i,quant_num,j,soma=0;
  scanf("%d",&quant_num);
- //Lemos aqui a quantidade de numeros que o usuario ira digitar e guardamos na variavel quant_num.
  int v[quant_num];
- //Entao criamos um vetor de tamanho quant_num.
  for(i=0;i<quant_num;i++){
-//Colocamos um laco de repeticao para dar o numero de loops correspondente ao numero inteiro guardado em quant_num.
     scanf("%d",&v[i]);
-    //Le-se o que o usuario digitou e entao guarda-se na posicao i do vetor v[quant_num].
     if(v[i]==0){
     /*Verificamos se o numero digitado pelo usuario é 0, se for zero rodamos o vetor ao contrario procurando
     *o primeiro numero diferente de 0 colocando o valor 0 caso haja essa situação, caso não, já haverá zeros
@@ -56,7 +52,5 @@ int main(){
     //Nao e nos pedido no enunciado, mas printamos o elemento do vetor ja formatado para visualizarmos seus atuais valores
  }
  printf("\n\nSoma: %d",soma);
- //Entao printamos a Soma
  return 0;
 }
-//Obrigado pela atencao
